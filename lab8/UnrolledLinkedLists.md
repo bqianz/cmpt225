@@ -10,7 +10,7 @@ List nodes consist of
 # Comparison: Array, Linked List, Unrolled Linked List
 
 Assume
-- $n$: number of elements
+- n: number of elements
 - cache hit: 5 cycles
 - cache miss: 200 cycles
 - item size: 4 bytes
@@ -21,12 +21,15 @@ Assume
 
 ## Array
 - cache misses = n/16
+
 __Traversal cycles__ = 5n + 200n/16 = 17.5n
 
 ## Linked List
 - cache misses = n
+
 __Traversal cycles__ = 5n + 200n = 205n
 
 ## Unrolled Linked List
 - cache misses = n/8 x (4 x 16 + 16)/64 ?? = 5n x32
+
 __Traversal cycles__ = 5n + 200 x 5n/32 = 34n

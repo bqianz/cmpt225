@@ -22,14 +22,14 @@ Assume
 ## Array
 - cache misses = n/16
 
-__Traversal cycles__ = 5n + 200n/16 = 17.5n
+__Traversal time__ = 5n + 200n/16 = 17.5n
 
 ## Linked List
 - cache misses = n
 
-__Traversal cycles__ = 5n + 200n = 205n
+__Traversal time__ = 5n + 200n = 205n
 
 ## Unrolled Linked List
 - cache misses = n/8 x (4 x 16 + 16)/64 ?? = 5n x32
 
-__Traversal cycles__ = 5n + 200 x 5n/32 = 34n
+__Traversal time__ = 5n + 200 x 5n/32 = 34n
